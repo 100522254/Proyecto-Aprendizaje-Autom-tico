@@ -70,7 +70,7 @@ print(df_comp.head(3).to_string())
 # --- Preproceso previo de la variable 'pdays_contacted' ---
 # Replicar el mismo preproceso aplicado en el Notebook 1
 df_comp['pdays_contacted'] = np.where(df_comp['pdays'] == -1, 0, 1)
-print("Columna 'pdays_contacted' añadida al dataset de competición.")
+print("Columna 'pdays_contacted' añadida al dataset de competición.\n")
 
 """
 6.4. Predicciones para la competición
