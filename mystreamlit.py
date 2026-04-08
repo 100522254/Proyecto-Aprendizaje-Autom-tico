@@ -4,7 +4,7 @@ Grupo 82 - Equipo 15
 *   Ariana Cornejo Infante,     100522121, 100522121@alumnos.uc3m.es
 *   Francisco Pérez Sokolowski, 100522254, 100522254@alumnos.uc3m.es
 
-Aplicación Streamlit para despliegue del modelo de predicción bancaria.
+Aplicación Streamlit para el despliegue del modelo de predicción bancaria.
 """
 
 # Imports necesarios
@@ -15,7 +15,7 @@ import io
 from joblib import load
 
 """
-6.3. Carga del modelo final y datos de competición
+*   Carga del modelo final y datos de competición
 Se realizará la carga del modelo final entrenado en el Notebook 1 (`modelo_final.joblib`).
 """
 
@@ -73,7 +73,7 @@ df_comp['pdays_contacted'] = np.where(df_comp['pdays'] == -1, 0, 1)
 print("Columna 'pdays_contacted' añadida al dataset de competición.\n")
 
 """
-6.4. Predicciones para la competición
+*   Predicciones para la competición
 Se utilizará el modelo final para obtener predicciones para el conjunto de datos de la competición, y se guardarán en 'predicciones.csv'.
 """
 predicciones_num = final_pipeline.predict(df_comp)

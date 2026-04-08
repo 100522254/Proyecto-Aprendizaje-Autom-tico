@@ -1,1 +1,0 @@
-# Proyecto-Aprendizaje-Autom-tico
